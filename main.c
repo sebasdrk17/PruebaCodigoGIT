@@ -1,10 +1,14 @@
 #include<stdio.h>
 void main(){
-	int i,vec[10],y;
-	for(i=0;i<10;i++){
-		vec[i]=i*5;
+	int i,vec[5][5],j;
+	for(i=0;i<5;i++){
+		for(j=0;j<5;j++){
+			vec[i][j]=i*5;
+		}
 	}
-	for(y=0;y<10;y++){
-		printf("%d",vec[y]);
+	for(i=0;i<5;i++){
+		for(j=0;j<5;j++){
+			printf("[%d][%d]=%d\n",i,j,vec[i][j]);
+		}
 	}
 }
